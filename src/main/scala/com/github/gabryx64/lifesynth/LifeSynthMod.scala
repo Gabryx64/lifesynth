@@ -1,21 +1,21 @@
-package com.github.gabryx65.vegetatio_eccentrica
+package com.github.gabryx64.lifesynth
 
-import com.github.gabryx64.vegetatio_eccentrica.{ParamLazy, Tags}
-import com.github.gabryx64.vegetatio_eccentrica.common.CommonProxy
+import com.github.gabryx64.lifesynth.{ParamLazy, Tags}
+import com.github.gabryx64.lifesynth.common.CommonProxy
 import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
 import net.minecraftforge.fml.common.{Mod, SidedProxy}
 import org.apache.logging.log4j.{LogManager, Logger}
 
 @Mod(modid = Tags.MOD_ID, name = Tags.MOD_NAME, version = Tags.VERSION, modLanguage = "scala", useMetadata = true)
-object VegetatioEccentricaMod {
+object LifeSynthMod {
   final val log: Logger = LogManager.getLogger(Tags.MOD_NAME)
 
   @Mod.Instance
-  var inst: VegetatioEccentricaMod.type = this
+  var inst: LifeSynthMod.type = this
 
   @SidedProxy(
-    clientSide = "com.github.gabryx64.vegetatio_eccentrica.client.ClientProxy",
-    serverSide = "com.github.gabryx64.vegetatio_eccentrica.server.ServerProxy"
+    clientSide = "com.github.gabryx64.lifesynth.client.ClientProxy",
+    serverSide = "com.github.gabryx64.lifesynth.server.ServerProxy"
   )
   var proxy: CommonProxy = _
 

@@ -1,7 +1,6 @@
-package com.github.gabryx64.vegetatio_eccentrica.common
+package com.github.gabryx64.lifesynth.common
 
-import com.github.gabryx64.vegetatio_eccentrica.{ParamLazy, Tags}
-import com.github.gabryx65.vegetatio_eccentrica.VegetatioEccentricaMod
+import com.github.gabryx64.lifesynth.{ParamLazy, Tags}
 import net.minecraftforge.common.config.Configuration
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent
 

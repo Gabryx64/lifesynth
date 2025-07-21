@@ -1,4 +1,4 @@
-package com.github.gabryx64.vegetatio_eccentrica
+package com.github.gabryx64.lifesynth
 
 object ParamLazy {
   private object ParamLazyParam {

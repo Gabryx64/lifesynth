@@ -1,6 +1,5 @@
-package com.github.gabryx64.vegetatio_eccentrica.common
+package com.github.gabryx64.lifesynth.common
 
-import com.github.gabryx65.vegetatio_eccentrica.VegetatioEccentricaMod
 import net.minecraft.block.Block
 import net.minecraft.item.Item
 import net.minecraftforge.event.RegistryEvent

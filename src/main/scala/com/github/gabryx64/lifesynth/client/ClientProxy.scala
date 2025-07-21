@@ -1,6 +1,6 @@
-package com.github.gabryx64.vegetatio_eccentrica.client
+package com.github.gabryx64.lifesynth.client
 
-import com.github.gabryx64.vegetatio_eccentrica.common.CommonProxy
+import com.github.gabryx64.lifesynth.common.CommonProxy
 import net.minecraftforge.client.event.ModelRegistryEvent
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent
