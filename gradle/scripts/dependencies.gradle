@@ -25,6 +25,14 @@ repositories {
             includeGroup 'maven.modrinth'
         }
     }
+    maven {
+        name = "Progwml6 maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
     mavenLocal() // Must be last for caching to work
 }
 
@@ -65,4 +73,8 @@ dependencies {
     // implementation ('com.google.code.gson:gson:2.8.6') {
     //     transitive = false
     // }
+
+    compileOnly 'org.scala-lang:scala-library:2.11.8'
+    compileOnly 'mezz.jei:jei_1.12.2:4.16.1.302:api'
+    runtimeOnly 'mezz.jei:jei_1.12.2:4.16.1.302'
 }
