@@ -8,7 +8,9 @@ import java.io.File
 
 object Config {
   lazy val (cfg) = ParamLazy((e: FMLPreInitializationEvent) => {
-    val cfg = new Configuration(new File(e.getModConfigurationDirectory.getPath, s"${Tags.MOD_ID}.cfg"))
+    val cfg = new Configuration(
+      new File(e.getModConfigurationDirectory.getPath, s"${Tags.MOD_ID}.cfg")
+    )
     cfg.load()
 
     if (cfg.hasChanged) {
@@ -19,7 +21,6 @@ object Config {
 
   def init(e: FMLPreInitializationEvent): Unit = {
     ParamLazy.init(cfg, e)
-
 
   }
 }

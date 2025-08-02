@@ -33,6 +33,10 @@ repositories {
         name = "ModMaven"
         url = "https://modmaven.dev"
     }
+    maven {
+        name 'Cleanroom Maven'
+        url 'https://maven.cleanroommc.com'
+    }
     mavenLocal() // Must be last for caching to work
 }
 
@@ -75,6 +79,7 @@ dependencies {
     // }
 
     compileOnly 'org.scala-lang:scala-library:2.11.8'
+    implementation("com.cleanroommc:modularui:2.5.0-rc5") { transitive false }
     compileOnly 'mezz.jei:jei_1.12.2:4.16.1.302:api'
     runtimeOnly 'mezz.jei:jei_1.12.2:4.16.1.302'
 }

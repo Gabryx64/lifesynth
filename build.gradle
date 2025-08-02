@@ -64,6 +64,10 @@ java {
     }
 }
 
+tasks.withType(ScalaCompile) {
+    scalaCompileOptions.additionalParameters = ["-Xexperimental"]
+}
+
 configurations {
     embed
     implementation.extendsFrom(embed)

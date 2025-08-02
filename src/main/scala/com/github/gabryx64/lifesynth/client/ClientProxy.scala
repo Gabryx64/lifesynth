@@ -1,6 +1,7 @@
 package com.github.gabryx64.lifesynth.client
 
 import com.github.gabryx64.lifesynth.common.CommonProxy
+import com.github.gabryx64.lifesynth.common.blocks.Blocks
 import net.minecraftforge.client.event.ModelRegistryEvent
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent
@@ -16,5 +17,6 @@ class ClientProxy extends CommonProxy {
 
 object ClientProxy {
   @SubscribeEvent def registerModels(event: ModelRegistryEvent): Unit = {
+    Blocks.initModels()
   }
 }
